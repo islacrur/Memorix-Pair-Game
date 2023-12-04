@@ -1,0 +1,44 @@
+* {
+    margin: 0
+}
+
+.toolbar {
+    border: solid blue;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    height: 2em;
+}
+
+.moves {
+    text-align: center;
+    height: 1em;
+    border: solid green;
+    padding: 1em;
+}
+
+.board {
+    display:flex;
+    flex-direction: column;
+    /*padding-top: 5em;*/
+}
+
+.board_row {
+    border: solid red;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card {
+    height: 5em;
+    width: 6em;
+    border: solid pink;
+    display:flex;
+    flex-direction:row;
+}
+
+button {
+    margin-left: 43%;
+    margin-top: 8%;
+}
