@@ -55,18 +55,15 @@ background-image: url(/src/img/Background_funfair_image.png);}
     backface-visibility: hidden;
 }
 
-.front {
-    background-color: orange;
-}
-
 .back {
     transform: rotateY(180deg);
+    background-color: #f4e8d5;
 }
 
 .card_face img {
     height: 5.5em;
     width: 5.5em;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .toolbar_bottom {
