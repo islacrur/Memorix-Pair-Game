@@ -2,8 +2,18 @@
     margin: 0
 }
 
+@media screen and (min-width: 480px) and (orientation: landscape) {
+
 body {font-family: 'Rye', serif;
 background-image: url(/src/img/Background_funfair_image.png);}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
 
 
 .toolbar {
@@ -11,20 +21,33 @@ background-image: url(/src/img/Background_funfair_image.png);}
     align-items: center;
     justify-content: center;
     justify-content: space-between;
-    height: 0.5em;
-    padding: 0.8em;
-    background-color: #D13111;
+   margin-top: 3%;
     color: white;
+}
+
+.toolbar_arrow {
+    margin-left: 3%;
+}
+
+.toolbar_volume {
+    margin-right: 3%;
 }
 
 .toolbar_volume img{
     height: 1.5em;  
 }
 
+.toolbar_subtitle {
+    color: white;
+    font-family: 'Ingrid Darling', cursive;
+    text-align: center;
+    font-size: 25px;
+}
+
 .board {
     display:flex;
     flex-direction: column;
-    margin-top: 10%;
+    margin-top: 2%;
 }
 
 .board_row {
@@ -34,8 +57,8 @@ background-image: url(/src/img/Background_funfair_image.png);}
     padding-bottom: 2%;
 }
 .card {
-    height: 5.5em;
-    width: 5.5em;
+    height: 6em;
+    width: 6em;
     display:flex;
     flex-direction:row;
     transition: transform 1s;
@@ -61,37 +84,36 @@ background-image: url(/src/img/Background_funfair_image.png);}
 }
 
 .card_face img {
-    height: 5.5em;
-    width: 5.5em;
+    height: 6em;
+    width: 6em;
     object-fit: contain;
 }
 
 .toolbar_bottom {
     display: flex;
     flex-direction: row;
-    margin-top: 3%;
+    font-size: small;
 }
 
 .time {
     display: flex;
     align-items: center;
     color: white;
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 .moves {
  color: white;
- margin-left: 25%;
+ margin-left: 37%;
 }
 
 button{
     background: none;
     border: 0;
-}
-
-button img {
-    height: 1.5em;
     margin-left: 0.5em;
     align-items: center;
-    padding-top: 2.5%;
+    color:white;
+}
+
+
 }

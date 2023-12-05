@@ -8,13 +8,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
   <body>
     <div class="toolbar">
-      <div class="toolbar_arrow"> &#x2190;</div>
-      <div class="toolbar_timer">Level 1 Easy</div>
-      <div class="toolbar_volume"><img src="/src/img/soundOnWhite.png"></div>
+      <div class="toolbar_arrow"><span class="material-symbols-outlined">
+        arrow_back
+        </span><span class="material-symbols-outlined">
+          refresh
+          </span></div>
+      <div class="toolbar_title">LEVEL 1 - EASY</div>
+      <div class="toolbar_volume"><span class="material-symbols-outlined">
+        music_off
+        </span><span class="material-symbols-outlined">
+          volume_off
+          </span></div>
     </div>
+    <div class="toolbar_subtitle">Find and match the pairs</div>
     <div class="board">
       <div class="board_row">
         <div class="card">
@@ -45,7 +58,9 @@
         </div>
       </div>
     </div>
-    <div class="toolbar_bottom"><div class="time">Time: 01:02<button><img src="/src/img/pauseWhite.png"></button></div><div class="moves">Moves:</div></div></div>
+    <div class="toolbar_bottom"><div class="time">Time: 01:02<button><span class="material-symbols-outlined">
+      pause_circle
+      </span></button></div><div class="moves">Moves:</div></div></div>
     
 
     <script src="/js/tablero01.js"></script>
