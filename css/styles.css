@@ -11,6 +11,8 @@
   main {
     background-size: contain;
     height: 124vh;
+    width: 100vw;
+    background-repeat: no-repeat;
   }
 
   #title {
@@ -78,14 +80,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #f4e8d5;
-  
+
   }
 
   #playButton {
     width: 25%;
     font-family: "Rye";
     font-size: 18px;
+    background-color: #f4e8d5;
+    border: 0;
     
   }
 
@@ -102,6 +105,8 @@
     font-family: "Rye";
     font-size: 60%;
     margin-right: -6%;
+    background-color: #f4e8d5;
+    border: 0;
   }
 
   #soundButton {
