@@ -4,16 +4,20 @@
 }
 @media screen and (min-width: 480px) and (orientation: landscape) {
   body {
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-  }
-
-  main {
-    background-size: contain;
-    height: 124vh;
-    width: 100vw;
+    background-image: url(/src/img/bgImage.png);
     background-repeat: no-repeat;
+    background-size: cover;*/
+    background-image: url(/src/img/bgImage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
+main {
+  display: flex;
+    flex-direction: column;
+    
+}
 
   #title {
     display: flex;
