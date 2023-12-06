@@ -43,7 +43,7 @@
     height: 20rem;
     width: 85%;
     margin: 0 auto;
-    background: #123431;
+   /* background: #ffffff;*/
     padding: 4rem 2rem;
   }
 
@@ -52,11 +52,15 @@
     margin-bottom: 0.7rem;
     height: 2.2rem;
     border-radius: 1.1rem;
-    background: #211123;
-    padding: 0 auto;
+    background: #F4E8D5;
+    padding: 0 1.5rem;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .row_name_span {
-    
+  .row_name_text {
+    color: #000000;
+    font-family: 'Rye', serif;
+
   }
 }
