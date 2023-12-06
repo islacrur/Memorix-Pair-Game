@@ -12,7 +12,9 @@ background-image: url(/src/img/Background_funfair_image.png);}
   'FILL' 0,
   'wght' 400,
   'GRAD' 0,
-  'opsz' 24
+  'opsz' 24;
+   display:inline-block;
+   vertical-align:middle;
 }
 
 
@@ -21,7 +23,7 @@ background-image: url(/src/img/Background_funfair_image.png);}
     align-items: center;
     justify-content: center;
     justify-content: space-between;
-   margin-top: 3%;
+    margin-top: 3%;
     color: white;
 }
 
@@ -56,6 +58,11 @@ background-image: url(/src/img/Background_funfair_image.png);}
     justify-content: space-evenly;
     padding-bottom: 2%;
 }
+
+.last {
+    padding-bottom: 0%;
+}
+
 .card {
     height: 6em;
     width: 6em;
@@ -93,27 +100,22 @@ background-image: url(/src/img/Background_funfair_image.png);}
     display: flex;
     flex-direction: row;
     font-size: small;
+    color:white;
+    justify-content: space-around;
+    padding: 1%;
 }
 
-.time {
-    display: flex;
-    align-items: center;
-    color: white;
-    margin-left: 10%;
-}
-
-.moves {
- color: white;
- margin-left: 37%;
-}
 
 button{
     background: none;
     border: 0;
-    margin-left: 0.5em;
-    align-items: center;
     color:white;
+    height: 2em;
 }
 
+.time {
+    margin-right: 22%;
+    line-height: 2em;
+}
 
 }
