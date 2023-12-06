@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
+  box-sizing: border-box;
 }
 @media screen and (min-width: 480px) and (orientation: landscape) {
   body {
-    
+    min-height: 100vh;
     background: linear-gradient(
       180deg,
       rgba(16, 1, 58, 1) 0%,
@@ -14,18 +15,34 @@
     background-image: url(/src/img/bgImage.png);
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  .ranking {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 4vw;
+    padding-top: 4vh;
+  }
+
+  #rankingButton {
+    background-color: #f4e8d5;
+    border: 0;
+    border-radius: 5px;
   }
 
   #title {
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
+    margin-top: 1%;
   }
 
   h1 {
     font-family: "Rye";
     color: #ffffff;
-    font-size: 250%;
+    font-size: 8vw;
     text-align: center;
     font-weight: normal;
   }
@@ -34,22 +51,21 @@
     font-family: "Ingrid Darling";
     color: #ffffff;
     text-align: center;
-    font-size: 220%;
+    font-size: 5vw;
     font-weight: normal;
   }
 
   #levels {
     display: flex;
     flex-direction: column;
-    margin-top: 1%;
+    margin-top: 2%;
   }
 
   .cards {
-    column-gap: 2%;
+    gap: 2vw;
     display: flex;
     justify-content: center;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding: 2vw;
   }
 
   .card {
@@ -59,8 +75,8 @@
   }
 
   .image {
-    height: 90px;
-    width: 90px;
+    height: 16vw;
+    width: 16vw;
   }
 
   .levelText {
@@ -69,7 +85,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "Rye";
-    font-size: 200%;
+    font-size: 7vw;
     text-align: center;
     object-fit: cover;
     color: #d13111;
@@ -82,55 +98,44 @@
   }
 
   #playButton {
-    width: 25%;
+    width: 20%;
     font-family: "Rye";
-    font-size: 18px;
+    font-size: 3vw;
     background-color: #f4e8d5;
     border: 0;
+    margin-top: 2vw;
+    border-radius: 5px;
   }
 
   .buttons {
     display: flex;
     flex-direction: row;
-    justify-content: end;
-    margin-top: 5%;
+    justify-content: flex-end;
+    align-content: flex-end;
+    padding-top: 6%;
+    padding-right: 3vw;
   }
 
   #howToPlayButton {
-    width: 17%;
-    height: 10%;
+    padding-left: 1%;
+    padding-right: 1%;
     font-family: "Rye";
-    font-size: 60%;
-    margin-right: -6%;
+    font-size: 2vw;
     background-color: #f4e8d5;
     border: 0;
+    border-radius: 5px;
+    margin-right: 1vw;
   }
 
-  #soundButton {
-    background: none;
-    border: none;
-    width: 20%;
-    height: 20%;
-    margin-right: -15%;
-  }
+  #soundButton,
   #musicButton {
-    background: none;
+    background-color: #f4e8d5;
     border: none;
-    width: 20%;
-    height: 20%;
-    margin-right: -5%;
+    border-radius: 5px;
+    margin-right: 1vw;
   }
 
-  .buttons button img {
-    object-fit: cover;
-    width: 20%;
-    height: 20%;
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 5;
   }
-}
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 200,
-  'GRAD' 0,
-  'opsz' 5;
 }
