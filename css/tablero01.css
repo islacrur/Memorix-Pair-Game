@@ -10,9 +10,9 @@ background-image: url(/src/img/Background_funfair_image.png);}
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
-  'wght' 400,
+  'wght' 200,
   'GRAD' 0,
-  'opsz' 24;
+  'opsz' 5;
    display:inline-block;
    vertical-align:middle;
 }
@@ -35,10 +35,6 @@ background-image: url(/src/img/Background_funfair_image.png);}
     margin-right: 3%;
 }
 
-.toolbar_volume img{
-    height: 1.5em;  
-}
-
 .toolbar_subtitle {
     color: white;
     font-family: 'Ingrid Darling', cursive;
@@ -55,7 +51,8 @@ background-image: url(/src/img/Background_funfair_image.png);}
 .board_row {
     display:flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 3%;
     padding-bottom: 2%;
 }
 
@@ -103,6 +100,7 @@ background-image: url(/src/img/Background_funfair_image.png);}
     color:white;
     justify-content: space-around;
     padding: 1%;
+    border: solid green;
 }
 
 
@@ -116,6 +114,12 @@ button{
 .time {
     margin-right: 22%;
     line-height: 2em;
+    border: solid red;
+}
+
+.moves {
+    border: solid pink;
+    padding-top: ;
 }
 
 }
