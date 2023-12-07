@@ -39,7 +39,7 @@ function contarTiempo(){
 }
 
 function bloquearTarjetas(){
-    for(let i = 0; i<=15; i++){
+    for(let i = 0; i<=5; i++){
     let tarjetaBloqueda = document.getElementById(i);
     tarjetaBloqueda.innerHTML =`<img src="src/images/${numeros[i]}.png" alt="${numeros[i]}">`; ;
     tarjetaBloqueda.disabled = true;
