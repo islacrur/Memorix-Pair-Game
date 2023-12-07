@@ -120,7 +120,6 @@
     align-items: center;
     padding-top: 4%;
     padding-right: 3vw;
-
   }
 
   #howToPlayButton {
@@ -131,7 +130,6 @@
     border: 0;
     border-radius: 5px;
     margin-right: 1vw;
-    
   }
 
   #soundButton,
@@ -140,6 +138,10 @@
     border: none;
     border-radius: 5px;
     margin-right: 1vw;
+  }
+  #soundOffIcon,
+  #musicOffIcon {
+    display: none;
   }
 
   .material-symbols-outlined {
