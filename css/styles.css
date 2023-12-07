@@ -73,6 +73,11 @@
     display: inline-block;
     text-align: center;
   }
+  .card.selected {
+    border-color: blue;
+    border-style: solid;
+    border-radius: 5px;
+  }
 
   .image {
     height: 16vw;
@@ -112,15 +117,14 @@
     flex-direction: row;
     justify-content: flex-end;
     align-content: flex-end;
+    align-items: center;
     padding-top: 4%;
     padding-right: 3vw;
 
   }
 
   #howToPlayButton {
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-top: 0.5%;
+    padding: 0.7% 1%;
     font-family: "Rye";
     font-size: 2vw;
     background-color: #f4e8d5;
@@ -136,7 +140,6 @@
     border: none;
     border-radius: 5px;
     margin-right: 1vw;
-    
   }
 
   .material-symbols-outlined {
