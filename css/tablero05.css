@@ -19,70 +19,53 @@ height: 100vh;
   'wght' 200,
   'GRAD' 0,
   'opsz' 5;
+   display:inline-block;
+   vertical-align:middle;
 }
 
-
 .toolbar {
-    padding: 0;
-    height: 40px;
     display:flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 3%;
     color: white;
 }
 
-
 .toolbar_arrow {
-    height: 40px;
-    width: 85px;
-    align-content: center;
-    justify-content: center;
-    
+    margin-left: 3%;
 }
 
 .toolbar_volume {
-    height: 40px;
-    width: 80px;
-  
-}
-
-.icon{
-    background: none;
-    border: 0;
-    color:white;
-    height: 30px;
-    width: 30px;
-    line-height: 10px;
+    margin-right: 3%;
 }
 
 .toolbar_subtitle {
     color: white;
     font-family: 'Ingrid Darling', cursive;
     text-align: center;
-    font-size: 23px;
+    font-size: 25px;
 }
 
 .board {
     display:flex;
     flex-direction: column;
-    
+    margin-top: 2%;
 }
 
 .board_row {
-    width: 90%;
     display:flex;
     align-items: center;
     justify-content: center;
     gap: 3%;
-    
+    padding-bottom: 2%;
 }
 
 .last {
     padding-bottom: 0%;
 }
 
-/*.card {
+.card {
     height: 6em;
     width: 6em;
     display:flex;
@@ -114,18 +97,6 @@ height: 100vh;
     height: 6em;
     width: 6em;
     object-fit: contain;
-}*/
-
-button{
-    width: 100px;
-    height: 100px;
-    border-radius: 8px;
-    border:none;
-    color:black;
-    font-size: 40px;
-    background-image: url(/src/img/BackCard.png);
-    background-size: cover;
-    margin: 0.2rem;
 }
 
 .toolbar_bottom {
@@ -134,11 +105,21 @@ button{
     font-size: small;
     color:white;
     justify-content: space-around;
-    padding: 1%;   
+    padding: 1%;
+    
+}
+
+
+button{
+    background: none;
+    border: 0;
+    color:white;
+    height: 2em;
 }
 
 .time {
     width: 8rem;
+    line-height: 2em;  
 }
 
 .time button {
@@ -147,10 +128,6 @@ button{
 
 .moves {
     line-height: 2em; 
-}
-
-img {
-    width: 100%;
 }
 
 }

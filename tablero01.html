@@ -15,52 +15,42 @@
   </head>
   <body>
     <div class="toolbar">
-      <div class="toolbar_arrow"><button><span class="material-symbols-outlined">
+      <div class="toolbar_arrow"><button class="icon"><span class="material-symbols-outlined">
         arrow_back</span></button>
-        <button><span class="material-symbols-outlined">
+        <button class="icon"><span class="material-symbols-outlined">
           refresh
           </span></button></div>
       <div class="toolbar_title">LEVEL 1 - EASY</div>
-      <div class="toolbar_volume"><button><span class="material-symbols-outlined">
+      <div class="toolbar_volume"><button class="icon"><span class="material-symbols-outlined">
         music_off
-        </span></button><button><span class="material-symbols-outlined">
+        </span></button><button class="icon"><span class="material-symbols-outlined">
           volume_off
           </span></button></div>
     </div>
     <div class="toolbar_subtitle">Find and match the pairs</div>
     <div class="board">
       <div class="board_row">
-        <div class="card">
-          <div class="card_face front"><img src="/src/img/backCard.png" /></div>
-          <div class="card_face back"><img src="/src/img/icecream.png" /></div>
-        </div>
-        <div class="card">
-          <div class="card_face front"><img src="/src/img/backCard.png" /></div>
-          <div class="card_face back"><img src="/src/img/icecream.png" /></div>
-        </div>
-        <div class="card">
-          <div class="card_face front"><img src="/src/img/backCard.png" /></div>
-          <div class="card_face back"><img src="/src/img/popcornStand.png" /></div>
-        </div>
+     
+          <button id="0" onclick="destapar(0)"></button>
+        
+          <button id="1" onclick="destapar(1)"></button>
+        
+          <button id="2" onclick="destapar(2)"></button>
       </div>
+      
       <div class="board_row last">
-        <div class="card">
-          <div class="card_face front"><img src="/src/img/backCard.png" /></div>
-          <div class="card_face back"><img src="/src/img/popcornStand.png" /></div>
-        </div>
-        <div class="card">
-          <div class="card_face front"><img src="/src/img/backCard.png" /></div>
-          <div class="card_face back"><img src="/src/img/hotdog.png"/></div>
-        </div>
-        <div class="card">
-          <div class="card_face front"><img src="/src/img/backCard.png" /></div>
-          <div class="card_face back"><img src="/src/img/hotdog.png"/></div>
-        </div>
+      
+          <button id="3" onclick="destapar(3)"></button>
+       
+          <button id="4" onclick="destapar(4)"></button>
+        
+          <button id="5" onclick="destapar(5)"></button>
+     
       </div>
     </div>
-    <div class="toolbar_bottom"><div class="time"><button><span class="material-symbols-outlined">
+    <div class="toolbar_bottom"><div id="tiempo" class="time"><button class="icon"><span class="material-symbols-outlined">
       pause_circle
-      </span></button>Time: 01:02</div><div class="moves">Moves:</div></div>
+      </span></button></div><div id="movimientos" class="moves">Moves:</div></div>
     
 
     <script src="/js/tablero01.js"></script>
