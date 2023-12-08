@@ -128,5 +128,5 @@ function destaparCartas(event) {
 
 refresh.addEventListener('click', _ => {
             location.reload();
-            card.classList('rotate-scale-down');
+            card.classList('roll-in-left');
 })
