@@ -92,11 +92,11 @@ function bloquearTarjetas(){
             if(parejas == 3){
                 clearInterval(tiempoRegresivoId);
                 mostrarParejas.textContent = `You found ${parejas} pairs!`;
-                mostrarMovimientos.textContent = ` ${movimientos} movements used`;
-                mostrarTiempo.textContent = `Only ${timer} seconds spent`;
+                mostrarMovimientos.textContent = ` ${movimientos} movements needed`;
+                mostrarTiempo.textContent = `Only in ${timer} seconds!`;
                 mostrarParejas.style.marginLeft = '5%';      
                 mostrarMovimientos.style.margin = '0 20px';   
-                mostrarTiempo.style.marginLeft = '5%';         
+                mostrarTiempo.style.marginLeft = '15%';         
             }
 
         }else{
