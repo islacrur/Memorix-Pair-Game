@@ -13,6 +13,7 @@ let temporizador = false;
 let timer = 0;
 let timerInicial = 0;
 let tiempoRegresivoId = null;
+let refresh = document.getElementById('refresh');
 
 ///////////////////////////// Apuntando a doc. HTML /////////////////////////////
 let mostrarMovimientos = document.getElementById("movimientos");
@@ -124,7 +125,8 @@ function destaparCartas(event) {
   });
 
   // Refrescar el juego pinchando en la flechita de refresh
-  let refresh = document.getElementById('refresh');
+
 refresh.addEventListener('click', _ => {
             location.reload();
+            card.classList('rotate-scale-down');
 })
