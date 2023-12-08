@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
   </head>
   <body>
     <div class="toolbar">
@@ -31,26 +32,26 @@
     <div class="board">
       <div class="board_row">
      
-          <button id="0" onclick="destapar(0)"></button>
+          <button class="card" id="0"></button>
         
-          <button id="1" onclick="destapar(1)"></button>
+          <button class="card" id="1"></button>
         
-          <button id="2" onclick="destapar(2)"></button>
+          <button class="card" id="2" ></button>
       </div>
       
       <div class="board_row last">
       
-          <button id="3" onclick="destapar(3)"></button>
+          <button class="card" id="3"></button>
        
-          <button id="4" onclick="destapar(4)"></button>
+          <button class="card" id="4"></button>
         
-          <button id="5" onclick="destapar(5)"></button>
+          <button class="card" id="5"></button>
      
       </div>
     </div>
     <div class="toolbar_bottom"><div id="tiempo" class="time"><!--<button class="icon"><span class="material-symbols-outlined">
       pause_circle
-      </span></button>--></div><div id="movimientos" class="moves">Moves:</div></div>
+      </span></button>--></div><div id="parejas"></div><div id="movimientos" class="moves"></div></div>
     
 
     <script src="/js/tablero01.js"></script>

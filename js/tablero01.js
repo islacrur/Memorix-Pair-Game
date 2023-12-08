@@ -1,6 +1,7 @@
 
 
 ///////////////////////////// Inicialización de variables /////////////////////////////
+let card = document.querySelectorAll('.card');
 let tarjetasDestapadas = 0;
 let tarjeta1 = null;
 let tarjeta2 = null;
@@ -85,13 +86,16 @@ function bloquearTarjetas(){
 
             //Aumentar parejas/////////////////////////////
             parejas++;
-            mostrarParejas.innerHTML = `Parejas: ${parejas}`;
+            mostrarParejas.innerHTML = `Pairs: ${parejas}`;
 
             if(parejas == 3){
                 clearInterval(tiempoRegresivoId);
-                mostrarParejas.innerHTML = `HAS ENCONTRADO LAS ${parejas} PAREJAS`;
-                mostrarMovimientos.innerHTML = `SÓLO HAS USADO ${movimientos} MOVIMIENTOS`;
-                mostrarTiempo.innerHTML = `GENIAL SÓLO HAS TARDADO ${timerInicial - timer} SEGUNDOS`
+                mostrarParejas.textContent = `You found ${parejas} pairs!`;
+                mostrarMovimientos.textContent = ` ${movimientos} movements used`;
+                mostrarTiempo.textContent = `Only ${timer} seconds spent`;
+                mostrarParejas.style.marginLeft = '5%';      
+                mostrarMovimientos.style.margin = '0 20px';   
+                mostrarTiempo.style.marginLeft = '5%';         
             }
 
         }else{
@@ -106,3 +110,17 @@ function bloquearTarjetas(){
             }
 }
 }
+
+
+
+// Para quitar el "onclick del HTML"
+function destaparCartas(event) {
+    // Obtén el valor del id del botón clickeado
+    var id = event.target.id;
+    
+    // Llama a la función destapar con el id como argumento
+    destapar(id);
+  }
+  card.forEach(function(card) {
+    card.addEventListener('click', destaparCartas);
+  });

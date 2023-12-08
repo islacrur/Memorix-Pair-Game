@@ -132,9 +132,9 @@ button{
 .toolbar_bottom {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     font-size: small;
     color:white;
-    justify-content: space-around;
     padding: 1%;   
 }
 
@@ -149,5 +149,13 @@ button{
 img {
     width: 100%;
 }
+
+
+
+
+
+
+
+
 
 }
