@@ -111,8 +111,6 @@ function bloquearTarjetas(){
 }
 }
 
-
-
 // Para quitar el "onclick del HTML"
 function destaparCartas(event) {
     // Obtén el valor del id del botón clickeado
@@ -124,3 +122,9 @@ function destaparCartas(event) {
   card.forEach(function(card) {
     card.addEventListener('click', destaparCartas);
   });
+
+  // Refrescar el juego pinchando en la flechita de refresh
+  let refresh = document.getElementById('refresh');
+refresh.addEventListener('click', _ => {
+            location.reload();
+})
