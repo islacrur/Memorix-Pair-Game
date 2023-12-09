@@ -24,6 +24,7 @@
     />
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
   </head>
+  
   <body>
     <div class="ranking" alt="ranking">
       <button id="rankingButton">
@@ -59,10 +60,12 @@
     </div>
     <div class="buttons">
       <button id="howToPlayButton" alt="how to play">HOW TO PLAY</button>
-      <button id="soundButton">
+      <button id="soundOnButton">
         <span id="soundOnIcon" class="material-symbols-outlined" alt="sound On">
           volume_up
         </span>
+      </button>
+      <button id="soundOnButton">
         <span
           id="soundOffIcon"
           class="material-symbols-outlined"
@@ -71,15 +74,25 @@
           volume_off
         </span>
       </button>
-      <button id="musicButton">
+      <button id="musicOnButton">
         <span id="musicOnIcon" class="material-symbols-outlined" alt="music On">
           music_note
         </span>
-        <span id="musicOffIcon" class="material-symbols-outlined" alt="music Off">
+      </button>
+      <button id="musicOffButton">
+        <span
+          id="musicOffIcon"
+          class="material-symbols-outlined"
+          alt="music Off"
+        >
           music_off
         </span>
       </button>
     </div>
+    <audio id="backgroundAudio" loop autoplay>
+      <source src="./src/sounds/musicCarnivalTune.mp3" type="audio/mp3" />
+    </audio>
+    <script src="./js/sounds.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
