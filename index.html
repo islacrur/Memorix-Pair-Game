@@ -1,11 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memorix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rye&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+  </head>
+  
+  <body>
+    <div class="ranking" alt="ranking">
+      <button id="rankingButton">
+        <span class="material-symbols-outlined"> trophy </span>
+      </button>
+    </div>
+    <div id="title">
+      <h1>MEMORIX</h1>
+      <h3>A fair card matching game</h3>
+    </div>
+    <div id="levels">
+      <div class="cards">
+        <div id="card1" class="card">
+          <img class="image" src="./src/img/backCard.png" alt="Easy" />
+          <div class="levelText">1</div>
+        </div>
+        <div id="card2" class="card">
+          <img class="image" src="./src/img/backCard.png" alt="Medium" />
+          <div class="levelText">2</div>
+        </div>
+        <div id="card3" class="card">
+          <img class="image" src="./src/img/backCard.png" alt="Hard" />
+          <div class="levelText">3</div>
+        </div>
+        <div id="card4" class="card">
+          <img class="image" src="./src/img/backCard.png" alt="Extreme" />
+          <div class="levelText">4</div>
+        </div>
+      </div>
+    </div>
+    <div class="playButton">
+      <button id="playButton" alt="play">PLAY</button>
+    </div>
+    <div class="buttons">
+      <button id="howToPlayButton" alt="how to play">HOW TO PLAY</button>
+      <button id="soundOnButton">
+        <span id="soundOnIcon" class="material-symbols-outlined" alt="sound On">
+          volume_up
+        </span>
+      </button>
+      <button id="soundOnButton">
+        <span
+          id="soundOffIcon"
+          class="material-symbols-outlined"
+          alt="sound Off"
+        >
+          volume_off
+        </span>
+      </button>
+      <button id="musicOnButton">
+        <span id="musicOnIcon" class="material-symbols-outlined" alt="music On">
+          music_note
+        </span>
+      </button>
+      <button id="musicOffButton">
+        <span
+          id="musicOffIcon"
+          class="material-symbols-outlined"
+          alt="music Off"
+        >
+          music_off
+        </span>
+      </button>
+    </div>
+    <audio id="backgroundAudio" loop autoplay>
+      <source src="./src/sounds/musicCarnivalTune.mp3" type="audio/mp3" />
+    </audio>
+    <script src="./js/sounds.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
