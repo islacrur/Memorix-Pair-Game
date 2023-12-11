@@ -41,6 +41,10 @@ height: 100vh;
     
 }
 
+a {
+  color:white;
+}
+
 .toolbar_volume {
     height: 40px;
     width: 80px;
