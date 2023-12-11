@@ -89,21 +89,10 @@ function bloquearTarjetas(){
 
             //Aumentar parejas/////////////////////////////
             parejas++;
+            
             mostrarParejas.innerHTML = `Pairs: ${parejas}`;
+            
 
-            if(parejas == 3){
-                clearInterval(tiempoRegresivoId);
-               
-                //mostrarResultados.textContent = `you matched all cards!<br> in ${timer} seconds<br> and ${movimientos} moves`;
-                
-                mostrarParejas.textContent = `You found ${parejas} pairs!`;
-                mostrarMovimientos.textContent = ` ${movimientos} movements needed`;
-                mostrarTiempo.textContent = `Only in ${timer} seconds!`;
-                //mostrarParejas.style.marginLeft = '5%';      
-                //mostrarMovimientos.style.margin = '0 20px';   
-                //mostrarTiempo.style.marginLeft = '15%'; 
-                //window.location.href = 'win.html';        
-            }
 
         }else{
             //Mostrar un momento las cartas destapadas y volver a voltear /////////////////////////////
@@ -114,6 +103,21 @@ function bloquearTarjetas(){
                 tarjeta2.disabled = false;
                 tarjetasDestapadas = 0;
             }, 800);
+            }
+            if(parejas == 3){
+                clearInterval(tiempoRegresivoId);
+                console.log(parejas);
+                //window.location.href = 'win.html';  
+                
+                //mostrarResultados.textContent = `you matched all cards!<br> in ${timer} seconds<br> and ${movimientos} moves`;
+                
+                mostrarParejas.textContent = `You found ${parejas} pairs!`;
+                mostrarMovimientos.textContent = ` ${movimientos} movements needed`;
+                mostrarTiempo.textContent = `Only in ${timer} seconds!`;
+                mostrarParejas.style.marginLeft = '5%';      
+                mostrarMovimientos.style.margin = '0 20px';   
+                mostrarTiempo.style.marginLeft = '15%'; 
+                      
             }
 }
 }
@@ -132,7 +136,7 @@ function destaparCartas(event) {
 
   // Refrescar el juego pinchando en la flechita de refresh
 
-refresh.addEventListener('click', _ => {
+refresh.addEventListener('click', (() => {
             location.reload();
             card.classList('roll-in-left');
-})
+            }))
