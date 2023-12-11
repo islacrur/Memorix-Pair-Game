@@ -37,6 +37,20 @@
         justify-content: center;
         align-items: center;
   }
+  home {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 4vw;
+    padding-top: 4vh;
+  }
+
+  #rankingButton {
+    background-color: #f4e8d5;
+    border: 0;
+    border-radius: 5px;
+  }
+
 
   .ranking {
     height: 20rem;
