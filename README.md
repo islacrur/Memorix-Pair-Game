@@ -26,7 +26,7 @@ For this project we used the technologies requested:
 - JavaScript
 
 ### Deployment
-
+ - Vercel: https://memorixgame.vercel.app/index.html
 
 ## Installations Steps
 
