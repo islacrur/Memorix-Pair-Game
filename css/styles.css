@@ -74,7 +74,7 @@
     text-align: center;
   }
   .card.selected {
-    border-color: blue;
+    border-color: white;
     border-style: solid;
     border-radius: 5px;
   }

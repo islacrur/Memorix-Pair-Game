@@ -41,7 +41,7 @@ playButton.addEventListener('click', () => {
         const cardId = selectedCard.id;
         switch (cardId) {
             case 'card1':
-                window.location.href = 'https://google.com';
+                window.location.href = 'tablero01.html';
                 break;
             case 'card2':
                 window.location.href = 'https://github.com';
