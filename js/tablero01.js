@@ -19,6 +19,8 @@ let refresh = document.getElementById('refresh');
 let mostrarMovimientos = document.getElementById("movimientos");
 let mostrarParejas = document.getElementById("parejas");
 let mostrarTiempo = document.getElementById("tiempo");
+let mostrarResultados = document.getElementById("results");
+
 
 
 ///////////////////////////// Crear números aleatorios /////////////////////////////
@@ -91,13 +93,16 @@ function bloquearTarjetas(){
 
             if(parejas == 3){
                 clearInterval(tiempoRegresivoId);
-                window.location.href = 'win.html';
-                //mostrarParejas.textContent = `You found ${parejas} pairs!`;
-                //mostrarMovimientos.textContent = ` ${movimientos} movements needed`;
-                //mostrarTiempo.textContent = `Only in ${timer} seconds!`;
+               
+                //mostrarResultados.textContent = `you matched all cards!<br> in ${timer} seconds<br> and ${movimientos} moves`;
+                
+                mostrarParejas.textContent = `You found ${parejas} pairs!`;
+                mostrarMovimientos.textContent = ` ${movimientos} movements needed`;
+                mostrarTiempo.textContent = `Only in ${timer} seconds!`;
                 //mostrarParejas.style.marginLeft = '5%';      
                 //mostrarMovimientos.style.margin = '0 20px';   
-                //mostrarTiempo.style.marginLeft = '15%';         
+                //mostrarTiempo.style.marginLeft = '15%'; 
+                //window.location.href = 'win.html';        
             }
 
         }else{

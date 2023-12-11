@@ -46,8 +46,10 @@ a {
 }
 
 .toolbar_volume {
+  display: flex;
+  flex-direction: row;
     height: 40px;
-    width: 80px;
+    width: 100px;
   
 }
 
