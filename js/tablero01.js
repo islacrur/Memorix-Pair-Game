@@ -1,6 +1,3 @@
-
-
-///////////////////////////// Inicialización de variables /////////////////////////////
 let card = document.querySelectorAll('.card');
 let tarjetasDestapadas = 0;
 let tarjeta1 = null;
@@ -15,22 +12,18 @@ let timerInicial = 0;
 let tiempoRegresivoId = null;
 let refresh = document.getElementById('refresh');
 
-///////////////////////////// Apuntando a doc. HTML /////////////////////////////
+
 let mostrarMovimientos = document.getElementById("movimientos");
 let mostrarParejas = document.getElementById("parejas");
 let mostrarTiempo = document.getElementById("tiempo");
 let mostrarResultados = document.getElementById("results");
 
 
-
-///////////////////////////// Crear números aleatorios /////////////////////////////
-
 let numeros = [1,1,2,2,3,3];
  
 numeros =  numeros.sort(()=>{return Math.random()-0.5});
 console.log(numeros);
 
-///////////////////////////// Funciones /////////////////////////////
 function contarTiempo(){
     tiempoRegresivoId = setInterval(() => {
         timer++;
@@ -51,8 +44,7 @@ function bloquearTarjetas(){
 }
 
 
-///////////////////////////// Función principal /////////////////////////////
- function destapar(id){
+function destapar(id){
 
     if(temporizador == false){
         contarTiempo();
@@ -63,31 +55,31 @@ function bloquearTarjetas(){
     console.log(tarjetasDestapadas)
 
     if(tarjetasDestapadas == 1){
-        //Mostrar primer número/////////////////////////////
+        
         tarjeta1 = document.getElementById(id);
         primerResultado = numeros[id];
-        tarjeta1.innerHTML = `<img src="src/img/${primerResultado}.png" alt="${primerResultado}">`; //innerHTML escribe en el HTML 
+        tarjeta1.innerHTML = `<img src="src/img/${primerResultado}.png" alt="${primerResultado}">`; 
 
-        //Deshabilitar primer botón /////////////////////////////
+        
         tarjeta1.disabled = true;
     }else if(tarjetasDestapadas == 2){
-        //Mostrar segundo número/////////////////////////////
+       
         tarjeta2 = document.getElementById(id);
-        segundoResultado = numeros[id]; //Lo que va a mostrar en la tarjeta2
-        tarjeta2.innerHTML = `<img src="src/img/${segundoResultado}.png" alt="${segundoResultado}">`; //Lo imprimimos en la tarjeta2
+        segundoResultado = numeros[id]; 
+        tarjeta2.innerHTML = `<img src="src/img/${segundoResultado}.png" alt="${segundoResultado}">`; 
 
-        //Deshabilitar segundo botón/////////////////////////////
+       
         tarjeta2.disabled = true;
 
-        //Incrementar movimientos/////////////////////////////
+        
         movimientos++;
-        mostrarMovimientos.innerHTML = `Moves: ${movimientos}`; //Template string para crear este texto
+        mostrarMovimientos.innerHTML = `Moves: ${movimientos}`; 
 
         if(primerResultado == segundoResultado){
-            //Poner a cero el contador de tarjetas destapadas/////////////////////////////
+            
             tarjetasDestapadas = 0;
 
-            //Aumentar parejas/////////////////////////////
+            
             parejas++;
             
             mostrarParejas.innerHTML = `Pairs: ${parejas}`;
@@ -95,7 +87,7 @@ function bloquearTarjetas(){
 
 
         }else{
-            //Mostrar un momento las cartas destapadas y volver a voltear /////////////////////////////
+            
             setTimeout(()=>{
                 tarjeta1.innerHTML = " ";
                 tarjeta2.innerHTML = " ";
@@ -107,9 +99,7 @@ function bloquearTarjetas(){
             if(parejas == 3){
                 clearInterval(tiempoRegresivoId);
                 console.log(parejas);
-                //window.location.href = 'win.html';  
-                
-                //mostrarResultados.textContent = `you matched all cards!<br> in ${timer} seconds<br> and ${movimientos} moves`;
+               
                 
                 mostrarParejas.textContent = `You found ${parejas} pairs!`;
                 mostrarMovimientos.textContent = ` ${movimientos} movements needed`;
@@ -122,19 +112,19 @@ function bloquearTarjetas(){
 }
 }
 
-// Para quitar el "onclick del HTML"
+
 function destaparCartas(event) {
-    // Obtén el valor del id del botón clickeado
+   
     var id = event.target.id;
     
-    // Llama a la función destapar con el id como argumento
+    
     destapar(id);
   }
   card.forEach(function(card) {
     card.addEventListener('click', destaparCartas);
   });
 
-  // Refrescar el juego pinchando en la flechita de refresh
+  
 
 refresh.addEventListener('click', (() => {
             location.reload();
