@@ -6,11 +6,11 @@ The game features a scoring system and a timer, both of which contribute to the 
 
 ## Requirements
 
-● The app MUST have a flippable card board.
-● The app MUST have matchmaking functionality.
-● The app MUST have card flipping animations.
-● The app MUST have a timer display.
-● The app MUST have a scoring system.
+- The app MUST have a flippable card board.
+- The app MUST have matchmaking functionality.
+- The app MUST have card flipping animations.
+- The app MUST have a timer display.
+- The app MUST have a scoring system.
 
 ## Process
 ### Tecnologies
