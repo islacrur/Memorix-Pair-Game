@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+@media screen and (min-width: 480px) and (orientation: landscape) {
+    body {font-family: 'Rye', serif;
+        background: linear-gradient(180deg, rgba(16,1,58,1) 0%, rgba(55,6,117,1) 100%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        }
+
+        .icon{
+            background: none;
+            border: 0;
+            color:white;
+            width: 30px;
+            padding: 10px;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 200,
+            'GRAD' 0,
+            'opsz' 5;
+          }
+
+          .toolbar_arrow {
+            height: 40px;
+            width: 85px;
+            align-content: center;
+            justify-content: center;
+            
+        }
+
+        a {
+            color:white;
+          }
+    
+        h1 {
+            color:white;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        .content {
+            background-color: white;
+            text-align:center;
+            border: solid, 1em, #d13111;
+            border-radius: 1em;
+            padding: 3%;
+            margin: 2%;
+            font-size: small;
+            line-height: 1.2;
+
+        }
+}

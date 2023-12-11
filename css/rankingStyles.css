@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 480px) and (orientation: landscape) {
+
+    body {
+    background: linear-gradient(180deg, rgba(16,1,58,1) 0%, rgba(55,6,117,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 200,
+        'GRAD' 0,
+        'opsz' 5;
+         display:inline-block;
+         vertical-align:middle;
+      }
+    
+    header{
+        justify-content: center;
+        align-items: center;
+    }  
+
+    h1{
+        font-family: "Rye";
+        color: #ffffff;
+        font-size: 250%;
+        text-align: center;
+        font-weight: normal;
+        justify-content: center;
+        align-items: center;
+  }
+  home {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 4vw;
+    padding-top: 4vh;
+  }
+
+  #rankingButton {
+    background-color: #f4e8d5;
+    border: 0;
+    border-radius: 5px;
+  }
+
+
+  .ranking {
+    height: 20rem;
+    width: 85%;
+    margin: 0 auto;
+   /* background: #ffffff;*/
+    padding: 4rem 2rem;
+  }
+
+  .row_name {
+    display: flex;
+    margin-bottom: 0.7rem;
+    height: 2.2rem;
+    border-radius: 1.1rem;
+    background: #F4E8D5;
+    padding: 0 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .row_name_text {
+    color: #000000;
+    font-family: 'Rye', serif;
+
+  }
+}
