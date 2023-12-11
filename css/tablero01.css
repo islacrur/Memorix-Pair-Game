@@ -130,7 +130,7 @@ button{
     border:none;
     color:black;
     font-size: 40px;
-    background-image: url(/src/img/BackCard.png);
+    background-image: url(/src/img/backCard.png);
     background-size: cover;
     margin: 0.2rem;
 }
