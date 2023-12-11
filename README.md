@@ -12,6 +12,11 @@ The game features a scoring system and a timer, both of which contribute to the 
 - The app MUST have a timer display.
 - The app MUST have a scoring system.
 
+## Extras
+
+- The app MUST have increasing difficulty levels.
+- The app MUST store the scores in localstorage.
+
 ## Process
 ### Tecnologies
 For this project we used the technologies requested:
